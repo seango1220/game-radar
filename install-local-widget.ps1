@@ -20,7 +20,7 @@ Start-Process -FilePath $nodePath `
 
 @"
 [InternetShortcut]
-URL=http://localhost:4173/?v=10
+URL=http://localhost:4173/?v=11
 IconFile=$appDir\game-radar-widget-icon-v3.ico
 IconIndex=0
 "@ | Set-Content -LiteralPath $shortcutPath -Encoding ASCII

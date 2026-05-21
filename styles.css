@@ -238,10 +238,6 @@ h2 {
   gap: 8px;
 }
 
-.calendar-head[hidden] {
-  display: none;
-}
-
 .calendar-head h2 {
   text-align: center;
   font-size: 1.05rem;

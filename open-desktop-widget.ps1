@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $appDir = $PSScriptRoot
-$url = "http://localhost:4173/?v=10"
+$url = "http://localhost:4173/?v=11"
 $edge = "$env:ProgramFiles (x86)\Microsoft\Edge\Application\msedge.exe"
 $chrome = "$env:ProgramFiles\Google\Chrome\Application\chrome.exe"
 

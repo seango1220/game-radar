@@ -1,9 +1,9 @@
-const STATIC_CACHE = "game-radar-static-v10";
+const STATIC_CACHE = "game-radar-static-v11";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=10",
-  "./app.js?v=10",
+  "./styles.css?v=11",
+  "./app.js?v=11",
   "./manifest.webmanifest",
   "./icon.svg",
   "./icon-192-v2.png",
