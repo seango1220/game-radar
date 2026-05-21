@@ -1,0 +1,13 @@
+{
+  "name": "game-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A compact PWA for upcoming video game releases and gaming events.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

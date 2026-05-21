@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111318">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Game Radar</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon-192.png" sizes="192x192">
+    <link rel="stylesheet" href="styles.css?v=9">
+  </head>
+  <body>
+    <main class="widget-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Game Radar</p>
+          <h1>Upcoming releases and showcases</h1>
+        </div>
+        <button id="refreshButton" class="icon-button" type="button" aria-label="Refresh data" title="Refresh data">
+          <span aria-hidden="true">↻</span>
+        </button>
+      </header>
+
+      <section class="status-strip" aria-live="polite">
+        <span id="statusDot" class="status-dot"></span>
+        <span id="statusText">Loading live schedule...</span>
+      </section>
+
+      <nav class="tabs" aria-label="Schedule views">
+        <button class="tab active" type="button" data-view="all">All</button>
+        <button class="tab" type="button" data-view="games">Games</button>
+        <button class="tab" type="button" data-view="events">Events</button>
+        <button class="tab" type="button" data-view="calendar">Calendar</button>
+      </nav>
+
+      <section id="timeline" class="timeline" aria-label="Upcoming items"></section>
+
+      <section id="calendarView" class="calendar-view" aria-label="Calendar view" hidden>
+        <div class="calendar-head" hidden>
+          <button id="prevMonth" class="mini-button" type="button" aria-label="Previous month" title="Previous month">&lt;</button>
+          <h2 id="calendarTitle"></h2>
+          <button id="nextMonth" class="mini-button" type="button" aria-label="Next month" title="Next month">&gt;</button>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>Sun</span>
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+        </div>
+        <div id="calendarGrid" class="calendar-grid"></div>
+        <div class="day-panel">
+          <h2 id="selectedDayTitle"></h2>
+          <div id="selectedDayItems" class="day-items"></div>
+        </div>
+      </section>
+    </main>
+
+    <template id="itemTemplate">
+      <article class="release-card">
+        <div class="date-block">
+          <span class="month"></span>
+          <strong class="day"></strong>
+        </div>
+        <div class="item-body">
+          <div class="item-heading">
+            <h2></h2>
+            <span class="kind"></span>
+          </div>
+          <p class="meta"></p>
+          <a class="source" target="_blank" rel="noreferrer">Source</a>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js?v=9" type="module"></script>
+  </body>
+</html>
