@@ -1,8 +1,8 @@
 const WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql";
-const CACHE_KEY = "game-radar-cache-v9";
+const CACHE_KEY = "game-radar-cache-v10";
 const CACHE_TTL_MS = 1000 * 60 * 60 * 6;
 
-["game-radar-cache-v1", "game-radar-cache-v2", "game-radar-cache-v3", "game-radar-cache-v4", "game-radar-cache-v5", "game-radar-cache-v6", "game-radar-cache-v7", "game-radar-cache-v8"].forEach((key) => localStorage.removeItem(key));
+["game-radar-cache-v1", "game-radar-cache-v2", "game-radar-cache-v3", "game-radar-cache-v4", "game-radar-cache-v5", "game-radar-cache-v6", "game-radar-cache-v7", "game-radar-cache-v8", "game-radar-cache-v9"].forEach((key) => localStorage.removeItem(key));
 
 const state = {
   view: "all",

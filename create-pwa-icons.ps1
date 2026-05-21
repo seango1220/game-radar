@@ -7,7 +7,7 @@ $sizes = @(192, 512)
 $src = [System.Drawing.Image]::FromFile($source)
 
 foreach ($size in $sizes) {
-  $out = Join-Path $PSScriptRoot "icon-$size.png"
+  $out = Join-Path $PSScriptRoot "icon-$size-v2.png"
   $bmp = New-Object System.Drawing.Bitmap $size, $size
   $g = [System.Drawing.Graphics]::FromImage($bmp)
   $g.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
